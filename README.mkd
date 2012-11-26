@@ -1,0 +1,17 @@
+This is the dev repo for a AUV tail section control board, offering direct drive capabilities for a primary thruster and three rotary-encoded  steering BLDC gearmotors.
+
+Notes:
+
+28V power backbone.
+
+Encoders take 5v supply, output 5V pwm @ 12b, 250Hz.
+
+RS232 communication to primary sub controller gives thrust/vector setpoint.
+
+Target of 50Hz control loop update rate.
+
+ATXMEGA32A4U + interface circuitry acts as I2C slave for Lego NXT, reading encoder PWM values and handling RS232 comms.
+
+NXT's I2C is 9600bps @ 5V w/ internal 82k pullups, with 16B in/out buffer. XMega needs 3v3 I2C, so FET based level shifter is needed.
+
+Basic design will be "wing" for xmega breakout, offering I2C level shifting / mechanical connector, RS232 level shifting / mechanical connector, 5v0 regulator, extensive decoupling, etc.
