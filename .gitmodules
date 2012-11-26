@@ -1,0 +1,3 @@
+[submodule "atxmega32a4u-board"]
+	path = atxmega32a4u-board
+	url = git@github.com:nonolith/Breakouts.git
