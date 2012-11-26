@@ -1,4 +1,6 @@
-This is the dev repo for a AUV tail section control board, offering direct drive capabilities for a primary thruster and three rotary-encoded  steering BLDC gearmotors.
+This is the dev repo for a AUV tail section control board, offering direct drive capabilities for a primary thruster and three rotary-encoded steering BLDC gearmotors.
+
+-----
 
 Notes:
 
@@ -12,6 +14,17 @@ Target of 50Hz control loop update rate.
 
 ATXMEGA32A4U + interface circuitry acts as I2C slave for Lego NXT, reading encoder PWM values and handling RS232 comms.
 
-NXT's I2C is 9600bps @ 5V w/ internal 82k pullups, with 16B in/out buffer. XMega needs 3v3 I2C, so FET based level shifter is needed.
+NXT's I2C is 9600bps @ 5V w/ internal 82k pullups, with 16B in/out buffer. XMega needs 3v3 I2C, so level shifter is needed.
 
 Basic design will be "wing" for xmega breakout, offering [I2C level shifting](http://www.nxp.com/documents/data_sheet/PCA9306.pdf) / [mechanical connector](http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&item=110980215829), [RS232 level shifting](http://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf) / mechanical connector, 5v0 regulator, extensive decoupling, etc.
+
+-----
+
+Tentative BOM
+
+* PCA9306D,118
+* ATXMEGA16A4U-AUR
+* MAX3223IDWR
+* NXT RJ12 6P6C connector with offset latch
+* 
+
