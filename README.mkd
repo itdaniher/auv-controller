@@ -27,9 +27,31 @@ Tentative BOM
 * MAX3223IDWR
 * NXT RJ12 6P6C connector with offset latch
 * 3xMAE3 encoders
+
 -----
 
 Power musings:
 
 Encoders need 20mA at 5v, times three
 NXT needs 150mA-500mA at 5v
+
+Parts of use:
+
+28V -> 5V
+
+* 445-8034-1-ND
+ * "CAP CER 10UF 35V 20% X7R 1206"
+* IFX27001TF V50INCT-ND 
+ * "IC REG LDO 5V 1A TO252-3"
+* 495-1537-1-ND
+ * "CAP TANT 470UF 10V 10% 2917"
+
+5V -> 3.3V
+
+* 445-8034-1-ND
+ * "CAP CER 10UF 35V 20% X7R 1206"
+* AP1117E33GDICT-ND
+ * "IC REG LDO 3.3V 1A SOT-223"
+* 495-1537-1-ND
+ * "CAP TANT 470UF 10V 10% 2917"
+
