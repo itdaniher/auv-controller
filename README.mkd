@@ -6,7 +6,7 @@ Notes:
 
 28V power backbone.
 
-Encoders take 5v supply, output 5V pwm @ 12b, 250Hz.
+Encoders take 5v supply, output 5V pwm @ 12b, 250Hz, requiring voltage divider before interface with XMega.
 
 RS232 communication to primary sub controller gives thrust/vector setpoint.
 
@@ -26,5 +26,10 @@ Tentative BOM
 * ATXMEGA16A4U-AUR
 * MAX3223IDWR
 * NXT RJ12 6P6C connector with offset latch
-* 
+* 3xMAE3 encoders
+-----
 
+Power musings:
+
+Encoders need 20mA at 5v, times three
+NXT needs 150mA-500mA at 5v
