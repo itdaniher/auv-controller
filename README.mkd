@@ -26,16 +26,25 @@ Tentative BOM
 * ATXMEGA16A4U-AUR
 * MAX3223IDWR
 * NXT RJ12 6P6C connector with offset latch
-* 3xMAE3 encoders
+* 3x MAE3-A10-118-220-7B encoders
+* 3x Faulhaber 2622-012B
 
 -----
 
 Power musings:
 
 Encoders need 20mA at 5v, times three
+
 NXT needs 150mA-500mA at 5v
 
+Faulhaber BLDCs need to be driven @ 12v, stall current of 0.4224A/ea
+
 Parts of use:
+
+28V -> 12V
+
+* PT78ST112V
+ * "1.5 Amp Positive Step-Down Integrated Switching Regulator"
 
 28V -> 5V
 
