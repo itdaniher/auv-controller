@@ -43,7 +43,7 @@ Parts of use:
 
 28V -> 12V
 
-* PT78ST112V
+* [PT78ST112V](http://www.ti.com/lit/ds/slts059a/slts059a.pdf)
  * "1.5 Amp Positive Step-Down Integrated Switching Regulator"
 
 28V -> 5V
