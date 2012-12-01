@@ -1,5 +1,12 @@
 This is the dev repo for a AUV tail section control board, offering direct drive capabilities for a primary thruster and three rotary-encoded steering BLDC gearmotors.
 
+
+-----
+
+### Mechanical design.
+
+Everything must fit into a 4.493 inch diameter cylinder, 2.968 inches deep.
+
 -----
 
 Notes:
@@ -63,4 +70,3 @@ Parts of use:
  * "IC REG LDO 3.3V 1A SOT-223"
 * 495-1537-1-ND
  * "CAP TANT 470UF 10V 10% 2917"
-
