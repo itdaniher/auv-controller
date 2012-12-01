@@ -1,0 +1,9 @@
+### EAGLE
+
+* make NXT connector package / symbol / part
+* make power circuitry parts
+* make package for SMPS
+* make symbol / part for MAX3223
+* make part for PCA9306
+
+
