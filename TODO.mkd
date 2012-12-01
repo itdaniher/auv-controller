@@ -2,8 +2,11 @@
 
 * make NXT connector package / symbol / part
 * make power circuitry parts
+ * packages DONE: ITD, 12/1/12
 * make package for SMPS
-* make symbol / part for MAX3223
-* make part for PCA9306
+* make symbol / part for MAX3223 in SO
+ * DONE: ITD, 12/1/12
+* make part for PCA9306 in SO
+ * DONE: ITD, 12/1/12
 
-
+12/1/12: nonolith/nonolith-eagle-library@b4c3cb7
