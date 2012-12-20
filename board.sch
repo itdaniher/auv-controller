@@ -2848,14 +2848,14 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <parts>
 <part name="U$1" library="nonolith" deviceset="PCA9306" device=""/>
 <part name="U1" library="nonolith" deviceset="MAX232" device=""/>
-<part name="RN1" library="nonolith" deviceset="RNETWORK" device=""/>
+<part name="RN1" library="nonolith" deviceset="RNETWORK" device="" value="10k"/>
 <part name="U$2" library="nonolith" deviceset="NXT-CONNECTOR" device=""/>
 <part name="PT78" library="nonolith" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="U$3" library="nonolith" deviceset="VREG" device="AP1117"/>
 <part name="U$4" library="nonolith" deviceset="VREG" device="IFX27001"/>
 <part name="C1" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_WAVE" value="470uF"/>
 <part name="C2" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_WAVE" value="470uF"/>
-<part name="C3" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_WAVE"/>
+<part name="C3" library="microbuilder" deviceset="CAP_TANTALUM" device="D/7343_WAVE" value="470uF"/>
 <part name="C4" library="nonolith" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="C5" library="nonolith" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 <part name="C6" library="nonolith" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
@@ -2873,29 +2873,29 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="U$5" library="nonolith" deviceset="MCP1700" device=""/>
 <part name="U$6" library="SparkFun" deviceset="M19" device=""/>
 <part name="U$7" library="SparkFun" deviceset="M19" device=""/>
-<part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C10" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C9" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
+<part name="C10" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="0.1uF"/>
 <part name="CN1" library="nonolith" deviceset="USB" device="MICROB"/>
 <part name="JP1" library="nonolith" deviceset="HEADER-2X3" device=""/>
 <part name="Y1" library="nonolith" deviceset="CRYSTAL" device=""/>
-<part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
+<part name="C11" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="18pF"/>
+<part name="C12" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="10pF"/>
 <part name="LED1" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="U$8" library="nonolith" deviceset="GND" device=""/>
 <part name="U$9" library="nonolith" deviceset="GND" device=""/>
 <part name="U$10" library="nonolith" deviceset="GND" device=""/>
-<part name="R1" library="nonolith" deviceset="RESISTOR" device="0603"/>
-<part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603"/>
-<part name="RN2" library="nonolith" deviceset="RNETWORK" device=""/>
-<part name="R2" library="nonolith" deviceset="RESISTOR" device="0603"/>
-<part name="R3" library="nonolith" deviceset="RESISTOR" device="0603"/>
-<part name="R4" library="nonolith" deviceset="RESISTOR" device="0603"/>
+<part name="R1" library="nonolith" deviceset="RESISTOR" device="0603" value="130O"/>
+<part name="C13" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="C14" library="nonolith" deviceset="CAP_CERAMIC" device="0603" value="1uF"/>
+<part name="RN2" library="nonolith" deviceset="RNETWORK" device="" value="10K"/>
+<part name="R2" library="nonolith" deviceset="RESISTOR" device="0603" value="6.8k"/>
+<part name="R3" library="nonolith" deviceset="RESISTOR" device="0603" value="6.8k"/>
+<part name="R4" library="nonolith" deviceset="RESISTOR" device="0603" value="6.8k"/>
 <part name="AUXSER" library="nonolith" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="MOT-THRUST" library="nonolith" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="3V3-I2C" library="nonolith" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="EXT_I2C" library="nonolith" deviceset="HEADER-1X4" device="ROUND"/>
-<part name="RN3" library="nonolith" deviceset="RNETWORK" device=""/>
+<part name="RN3" library="nonolith" deviceset="RNETWORK" device="" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -3269,26 +3269,26 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 </net>
 <net name="REMUS-RX" class="0">
 <segment>
-<pinref part="RS232" gate="A" pin="1"/>
-<wire x1="29.21" y1="48.26" x2="24.13" y2="48.26" width="0" layer="91"/>
-<label x="24.13" y="48.26" size="1.778" layer="95" rot="R180"/>
+<pinref part="U1" gate="G$1" pin="T1OUT"/>
+<wire x1="83.82" y1="53.34" x2="86.36" y2="53.34" width="0" layer="91"/>
+<label x="86.36" y="53.34" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="R1IN"/>
-<wire x1="83.82" y1="48.26" x2="86.36" y2="48.26" width="0" layer="91"/>
-<label x="86.36" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="REMUS-TX" class="0">
 <segment>
 <pinref part="RS232" gate="A" pin="2"/>
 <wire x1="29.21" y1="45.72" x2="24.13" y2="45.72" width="0" layer="91"/>
 <label x="24.13" y="45.72" size="1.778" layer="95" rot="R180"/>
 </segment>
+</net>
+<net name="REMUS-TX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="T1OUT"/>
-<wire x1="83.82" y1="53.34" x2="86.36" y2="53.34" width="0" layer="91"/>
-<label x="86.36" y="53.34" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="R1IN"/>
+<wire x1="83.82" y1="48.26" x2="86.36" y2="48.26" width="0" layer="91"/>
+<label x="86.36" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RS232" gate="A" pin="1"/>
+<wire x1="29.21" y1="48.26" x2="24.13" y2="48.26" width="0" layer="91"/>
+<label x="24.13" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="ENCO0" class="0">
@@ -3374,18 +3374,6 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 </net>
 <net name="AUX-TX" class="0">
 <segment>
-<pinref part="AUXSER" gate="A" pin="2"/>
-<wire x1="17.78" y1="66.04" x2="12.7" y2="66.04" width="0" layer="91"/>
-<label x="12.7" y="66.04" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="T2OUT"/>
-<wire x1="83.82" y1="50.8" x2="86.36" y2="50.8" width="0" layer="91"/>
-<label x="86.36" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AUX-RX" class="0">
-<segment>
 <pinref part="U1" gate="G$1" pin="R2IN"/>
 <wire x1="83.82" y1="45.72" x2="86.36" y2="45.72" width="0" layer="91"/>
 <label x="86.36" y="45.72" size="1.778" layer="95"/>
@@ -3394,6 +3382,18 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <pinref part="AUXSER" gate="A" pin="1"/>
 <wire x1="17.78" y1="68.58" x2="12.7" y2="68.58" width="0" layer="91"/>
 <label x="12.7" y="68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="AUX-RX" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="T2OUT"/>
+<wire x1="83.82" y1="50.8" x2="86.36" y2="50.8" width="0" layer="91"/>
+<label x="86.36" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AUXSER" gate="A" pin="2"/>
+<wire x1="17.78" y1="66.04" x2="12.7" y2="66.04" width="0" layer="91"/>
+<label x="12.7" y="66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PE3" class="0">
