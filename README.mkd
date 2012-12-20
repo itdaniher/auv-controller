@@ -35,6 +35,7 @@ Tentative BOM
 * NXT RJ12 6P6C connector with offset latch
 * 3x MAE3-A10-118-220-7B encoders
 * 3x Faulhaber 2622-012B
+* D-sub connector, similar to DigiKey's DB17W2PA00LF-ND, with 17 terminals, 15 signal, 2 power
 
 -----
 
