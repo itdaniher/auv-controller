@@ -3327,14 +3327,14 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <label x="43.18" y="106.68" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="PC2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="R1OUT"/>
 <wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0" layer="91"/>
 <label x="45.72" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="PC3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="T1IN"/>
 <wire x1="48.26" y1="53.34" x2="45.72" y2="53.34" width="0" layer="91"/>
@@ -3365,18 +3365,11 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <label x="26.67" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="PC6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="R2OUT"/>
 <wire x1="48.26" y1="45.72" x2="45.72" y2="45.72" width="0" layer="91"/>
 <label x="45.72" y="45.72" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="T2IN"/>
-<wire x1="48.26" y1="50.8" x2="45.72" y2="50.8" width="0" layer="91"/>
-<label x="45.72" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="AUX-TX" class="0">
@@ -3521,6 +3514,13 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <wire x1="13.97" y1="118.11" x2="13.97" y2="120.65" width="0" layer="91"/>
 <junction x="21.59" y="111.76"/>
 <junction x="17.78" y="111.76"/>
+</segment>
+</net>
+<net name="PC7" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="T2IN"/>
+<wire x1="48.26" y1="50.8" x2="45.72" y2="50.8" width="0" layer="91"/>
+<label x="45.72" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>

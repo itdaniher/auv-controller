@@ -1439,6 +1439,9 @@ design rules under a new name.</description>
 <via x="66" y="69" extent="1-16" drill="0.305" shape="octagon"/>
 <via x="69" y="63" extent="1-16" drill="0.305" shape="octagon"/>
 <contactref element="C3" pad="-"/>
+<via x="23" y="77" extent="1-16" drill="0.305" shape="octagon"/>
+<via x="24" y="73" extent="1-16" drill="0.305" shape="octagon"/>
+<via x="22" y="71" extent="1-16" drill="0.305" shape="octagon"/>
 <wire x1="44.784" y1="69.094" x2="44.784" y2="65.118" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3">
@@ -1799,6 +1802,10 @@ design rules under a new name.</description>
 <wire x1="33.608" y1="64.043853125" x2="33.608" y2="73.754" width="0.254" layer="1"/>
 <wire x1="33.608" y1="73.754" x2="29.417" y2="77.945" width="0.254" layer="1"/>
 <wire x1="29.417" y1="77.945" x2="27.385" y2="77.945" width="0.254" layer="1"/>
+<contactref element="U1" pad="12"/>
+<wire x1="15.635" y1="72.6" x2="15.635" y2="74.635" width="0.254" layer="1"/>
+<wire x1="15.635" y1="74.635" x2="18.945" y2="77.945" width="0.254" layer="1"/>
+<wire x1="18.945" y1="77.945" x2="27.385" y2="77.945" width="0.254" layer="1"/>
 </signal>
 <signal name="PC3">
 <contactref element="ATXMEGA32A4U" pad="13"/>
@@ -1807,6 +1814,11 @@ design rules under a new name.</description>
 <wire x1="29.925" y1="75.405" x2="32.592" y2="72.738" width="0.254" layer="1"/>
 <wire x1="32.592" y1="72.738" x2="32.592" y2="63.928478125" width="0.254" layer="1"/>
 <wire x1="32.592" y1="63.928478125" x2="38.281875" y2="58.238603125" width="0.254" layer="1"/>
+<contactref element="U1" pad="11"/>
+<wire x1="16.905" y1="72.6" x2="17" y2="72.695" width="0.4064" layer="1"/>
+<wire x1="17" y1="72.695" x2="17" y2="74" width="0.254" layer="1"/>
+<wire x1="17" y1="74" x2="18.405" y2="75.405" width="0.254" layer="1"/>
+<wire x1="18.405" y1="75.405" x2="27.385" y2="75.405" width="0.254" layer="1"/>
 </signal>
 <signal name="PC4">
 <contactref element="ATXMEGA32A4U" pad="14"/>
@@ -1831,12 +1843,20 @@ design rules under a new name.</description>
 <wire x1="29.671" y1="67.785" x2="29.798" y2="67.658" width="0.254" layer="1"/>
 <wire x1="29.798" y1="67.658" x2="29.798" y2="63.328365625" width="0.254" layer="1"/>
 <wire x1="29.798" y1="63.328365625" x2="36.58481875" y2="56.541546875" width="0.254" layer="1"/>
+<contactref element="U1" pad="9"/>
+<wire x1="27.385" y1="67.785" x2="22.57" y2="72.6" width="0.254" layer="1"/>
+<wire x1="22.57" y1="72.6" x2="19.445" y2="72.6" width="0.254" layer="1"/>
 </signal>
 <signal name="PC7">
 <contactref element="ATXMEGA32A4U" pad="17"/>
 <contactref element="U$7" pad="14"/>
 <wire x1="36.019134375" y1="55.9758625" x2="27.385" y2="64.609996875" width="0.254" layer="1"/>
 <wire x1="27.385" y1="65.245" x2="27.385" y2="64.609996875" width="0.254" layer="1"/>
+<contactref element="U1" pad="10"/>
+<wire x1="22.63" y1="70" x2="27.385" y2="65.245" width="0.254" layer="1"/>
+<wire x1="18.175" y1="72.6" x2="18.175" y2="70.825" width="0.4064" layer="1"/>
+<wire x1="18.175" y1="70.825" x2="19" y2="70" width="0.254" layer="1"/>
+<wire x1="19" y1="70" x2="22.63" y2="70" width="0.254" layer="1"/>
 </signal>
 <signal name="PB0">
 <contactref element="ATXMEGA32A4U" pad="4"/>
@@ -2080,18 +2100,6 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <wire x1="34.358" y1="42.258" x2="34.712" y2="41.904" width="0.254" layer="1"/>
 <wire x1="34.712" y1="41.904" x2="34.712" y2="40.226" width="0.254" layer="1"/>
-</signal>
-<signal name="N$2">
-<contactref element="U1" pad="12"/>
-</signal>
-<signal name="N$9">
-<contactref element="U1" pad="11"/>
-</signal>
-<signal name="N$20">
-<contactref element="U1" pad="9"/>
-</signal>
-<signal name="N$21">
-<contactref element="U1" pad="10"/>
 </signal>
 <signal name="AUX-TX">
 <contactref element="AUXSER" pad="2"/>
