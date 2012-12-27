@@ -1,0 +1,39 @@
+28VIN                       2X03
+3V3-I2C                     1X03
+AUXSER                      1X03
+REMUS-SER                   1X03
+USB-MICROB
+
+PT78                        1X03
+
+C1           470uF          EIA7343
+C2           470uF          EIA7343
+C3           470uF          EIA7343-
+C4           10uF           1206
+C5           10uF           1206
+C6           10uF           1206
+C7           0.1uF          0603
+C8           0.1uF          0603
+C9           0.1uF          0603
+C10          0.1uF          0603 
+C11          18pF           0603
+C12          10pF           0603
+C13          1uF            0603
+C14          1uF            0603
+R1           130o           0603
+R2           6.8k           0603
+R3           6.8k           0603
+R4           6.8k           0603
+RN1          10k            RN8P-4R-CRA06S
+RN2          10k            RN8P-4R-CRA06S
+RN3          10k            RN8P-4R-CRA06S
+LED1                        0603
+
+
+PCA9306      SO-08
+NXT          NXT-FOOTPRINT
+AP1117       SOT223
+IFX27001     TO252
+MCP1700      SOT23-3
+SN75C3232    SO-16
+ATXMEGA32A4U TQFP-44

@@ -1,3 +1,13 @@
 This is the dev repo for a AUV tail section control board, offering direct drive capabilities for a primary thruster and three rotary-encoded steering BLDC gearmotors.
 
 Please see the writeup and documentation contained in [AUVElectricalDesign.pdf]().
+
+-----
+
+Pending two vs. four quadrant decision:
+
+* 3x [TrackStar Bidirectional BLDC ESC](www.hobbyking.com/hobbyking/store/__24290__Turnigy_TrackStar_18A_1_18th_Scale_Brushless_Car_ESC_USA_Warehouse_.html)
+
+OR
+
+* 6x HIP4020 + 3x ATXMEGA32A4U (plus support circuitry)
